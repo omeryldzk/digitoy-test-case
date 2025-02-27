@@ -52,6 +52,4 @@ g++ -std=c++17 -g src/*.cpp -I include -o bin/output
 ## Notlar
 - Proje ağırlıklı olarak İngilizce yazılmıştır, ancak önemli kısımlarda açıklayıcı Türkçe yorumlar eklenmiştir.
 
-## Lisans
-Bu proje açık kaynaklıdır. Katkıda bulunmaktan çekinmeyin!
 
