@@ -10,6 +10,7 @@ C++ ile geleneksel Okey oyununun implementasyonu. Bu proje, tüm oyuncuların el
 - Normal sıralamalar ve çift açma stratejilerini içeren detaylı bir el değerlendirmesi yapar.
 
 ## Yaklaşım
+### Düz Açma Stratejisi
 1. **Ardışık Perleri Bulma**: 
    - Öncelikle çifte gitmeden eli değerlendirir.
    - Taşlar önce renklerine göre gruplandırılır ve sıralanır.
@@ -25,13 +26,14 @@ C++ ile geleneksel Okey oyununun implementasyonu. Bu proje, tüm oyuncuların el
    - Bulunan perler uzunluklarına göre büyükten küçüğe sıralanır.
    - Kullanılan taşlar işaretlenerek maksimum geçerli perler belirlenir.
    - Kazanmaya kalan taş sayısı hesaplanır.
-     
-4. **Çift Açma Stratejisi**:
+
+### Çift Açma Stratejisi
+1. **Çift Perleri Bulma**:
    - Taşlar sayılarına göre sınıflandırılır.
    - Geçerli çiftler belirlenir ve ayrı bir `std::vector<std::vector<Tile*>>` yapısında saklanır.
    - Kazanmaya kalan taş sayısı hesaplanır.
 
-5. **Kazanmaya En Yakın Oyuncunun Belirlenmesi**:
+ ### Kazanmaya En Yakın Oyuncunun Belirlenmesi:
    - Oyuncuların çift veya düz açma stratejilerinden hangisine elleri daha uygunsa o kullanılır
    - Her oyuncunun elini tamamlaması için gereken taş sayısı hesaplanır.
    - Sonuçlar karşılaştırılarak kazanmaya en yakın oyuncu belirlenir.
